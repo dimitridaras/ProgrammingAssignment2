@@ -1,10 +1,10 @@
-## makeCacheMatrix defines and returns four functions for storing and retrieving the matrix and its inverse. The inverse is stored in a variable that is scoped to the function. It performs no calculations or caching.
+## makeCacheMatrix defines and returns four functions for storing and retrieving the matrix and its inverse. 
+## The inverse is stored in a variable that is scoped to the function. It performs no calculations or caching.
 ## cacheSolve performs the caching and calculation, using makeCacheMatrix as a storage mechanism.
 
 
-
 ## makeCacheMatrix provides an interface for storing and retrieving the matrix and its inverse
-## the set function may be used to rest the matrix and the inverse
+## the set function may be used to reset the matrix and the inverse
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
     set <- function(y) {
